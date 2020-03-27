@@ -8,7 +8,7 @@ public class Exercicio03 {
 
   public List<Pessoa> filtrarPessoasPorCidade(final List<Pessoa> pessoas, final String cidade) {
 
-    final List<Pessoa> pessoasPorCidade = new ArrayList<Pessoa>();
+    final List<Pessoa> pessoasPorCidade = new ArrayList<>();
 
     for (Pessoa pessoa : pessoas) {
       if (cidade.equalsIgnoreCase(pessoa.getCidadeOndeEstaFalando())) {

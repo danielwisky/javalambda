@@ -10,12 +10,12 @@ public class Exercicio06 {
 
   public Map<String, List<Pessoa>> agruparPessoasPorCidade(final List<Pessoa> pessoas) {
 
-    final Map<String, List<Pessoa>> map = new HashMap<String, List<Pessoa>>();
+    final Map<String, List<Pessoa>> map = new HashMap<>();
 
     for (Pessoa pessoa : pessoas) {
 
       if (!map.containsKey(pessoa.getCidadeOndeEstaFalando())) {
-        map.put(pessoa.getCidadeOndeEstaFalando(), new ArrayList<Pessoa>());
+        map.put(pessoa.getCidadeOndeEstaFalando(), new ArrayList<>());
       }
 
       map.get(pessoa.getCidadeOndeEstaFalando()).add(pessoa);

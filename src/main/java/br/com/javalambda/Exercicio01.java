@@ -8,7 +8,7 @@ public class Exercicio01 {
 
   public List<String> converterParaListaNomes(final List<Pessoa> pessoas) {
 
-    final List<String> nomes = new ArrayList<String>();
+    final List<String> nomes = new ArrayList<>();
 
     for (Pessoa pessoa : pessoas) {
       nomes.add(pessoa.getNome());
